@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik:wght@400;600;700&display=swap');
+
+@import url('../node_modules/animate.css/animate.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'sweetalert2.scss';
+
+.aa{
+    @apply  lg:w-min md:w-min border border-neutral-700 p-3 absolute right-[55px];
+}
+.swal2-confirm {
+    @apply bg-neutral-700 text-white border-0 !important;
+}
+.swal2-title{
+    @apply font-heading !important;
+}
+            
+
+.category-badge{
+    @apply border border-neutral-700 p-2  text-neutral-700 capitalize;
+}
+.category-badge.active{
+    @apply border border-neutral-700 p-2 bg-neutral-700 text-white;
+}
+
+.product-card{
+
+}
+.product-card .product-img{
+    @apply duration-300 transition-transform;
+}
+.product-card:hover .product-img{
+    @apply -rotate-6;
+}
