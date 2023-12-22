@@ -10,7 +10,7 @@
 @import 'sweetalert2.scss';
 
 .aa{
-    @apply  lg:w-min md:w-min border border-neutral-700 p-3 absolute right-[55px];
+    @apply  border border-neutral-700 p-3   md:right-[55px] md:top-4 lg:right-[55px] lg:top-4 lg:absolute md:absolute ;
 }
 .swal2-confirm {
     @apply bg-neutral-700 text-white border-0 !important;

@@ -56,14 +56,15 @@ export const orderNowHandler = () => {
 }
 
 export const searchBtnHandler = () => {
-   
-    const headerBtnSet = app.querySelector('.header-btn-section');
+    const inputSection = app.querySelector('#inputSection');
     const searchInput = document.createElement('input');
-    searchInput.classList.add('aa');
-    headerBtnSet.append(searchInput);
+    searchInput.classList.add('aa',);
+    inputSection.append(searchInput);
+    searchInput.focus();
+    console.log(searchInput);
     searchInput.addEventListener('keyup',() => {
         
-           productRender(products.filter(product => product.title.toLowerCase().search((searchInput.value.toLowerCase())) >= 0))
+        productRender(products.filter(product => product.title.toLowerCase().search((searchInput.value.toLowerCase())) >= 0))
         
       
         
